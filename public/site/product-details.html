@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+  <head>
+    <!-- Mobile Specific Meta -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="../assets/images/fav.jpg" />
+    <!-- Author Meta -->
+    <meta name="author" content="CodePixar" />
+    <!-- Meta Description -->
+    <meta name="description" content="" />
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="" />
+    <!-- meta character set -->
+    <meta charset="UTF-8" />
+    <!-- Site Title -->
+    <title class="title-page"></title>
+    <!--
+		CSS
+		============================================= -->
+    <link rel="stylesheet" href="../assets/css/site/linearicons.css" />
+    <link rel="stylesheet" href="../assets/css/site/font-awesome.min.css" />
+    <link rel="stylesheet" href="../assets/css/site/themify-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <link rel="stylesheet" href="../assets/css/site/owl.carousel.css" />
+    <link rel="stylesheet" href="../assets/css/site/nice-select.css" />
+    <link rel="stylesheet" href="../assets/css/site/nouislider.min.css" />
+    <link rel="stylesheet" href="../assets/css/site/ion.rangeSlider.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/css/site/ion.rangeSlider.skinFlat.css"
+    />
+    <link rel="stylesheet" href="../assets/css/site/magnific-popup.css" />
+    <link rel="stylesheet" href="../assets/css/site/main.css" />
+  </head>
+
+  <body>
+    <!-- Start Header Area -->
+    <header class="header_area sticky-header">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light main_box">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand logo_h" href="/"
+              ><img src="../assets/images/logo.png" alt=""
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav menu_nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="./">Trang chủ</a>
+                </li>
+                <li class="nav-item submenu dropdown">
+                  <a
+                    href="#"
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Shop</a
+                  >
+                  <ul class="dropdown-menu nav__cat"></ul>
+                </li>
+                <li class="nav-item">
+                  <a href="/blog" class="nav-link">Blog++</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/contact" class="nav-link">Liên hệ</a>
+                </li>
+                <li class="nav-item account"></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                  <a href="./cart.html" class="cart"
+                    ><span class="ti-bag"></span
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <button class="search">
+                    <span class="lnr lnr-magnifier" id="search"></span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="search_input" id="search_input_box">
+        <div class="container">
+          <form class="d-flex justify-content-between">
+            <input
+              type="text"
+              class="form-control"
+              id="search_input"
+              placeholder="Search Here"
+            />
+            <button type="submit" class="btn"></button>
+            <span
+              class="lnr lnr-cross"
+              id="close_search"
+              title="Close Search"
+            ></span>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Area -->
+
+    <!-- Start Banner Area -->
+    <section class="banner-area organic-breadcrumb">
+      <div class="container">
+        <div
+          class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end"
+        >
+          <div class="col-first">
+            <h1>Chi Tiết sản phẩm</h1>
+            <nav class="d-flex align-items-center loca-nav"></nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Banner Area -->
+
+    <!--================Single Product Area =================-->
+    <div class="product_image_area">
+      <div class="container">
+        <div class="row s_product_inner"></div>
+      </div>
+    </div>
+    <!--================End Single Product Area =================-->
+
+    <!--================Product Description Area =================-->
+    <section class="product_description_area">
+      <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="home-tab"
+              data-toggle="tab"
+              href="#home"
+              role="tab"
+              aria-controls="home"
+              aria-selected="true"
+              >Mô tả sản phẩm</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="profile-tab"
+              data-toggle="tab"
+              href="#profile"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+              >Thông số</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              id="contact-tab"
+              data-toggle="tab"
+              href="#contact"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+              >Bình luận</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active"
+              id="review-tab"
+              data-toggle="tab"
+              href="#review"
+              role="tab"
+              aria-controls="review"
+              aria-selected="false"
+              >Đánh giá</a
+            >
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div
+            class="tab-pane fade"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+          >
+            <h2>Nike Mercurial Superfly 8 Elite Spark Positve CR7 FG</h2>
+            <p>
+              Nike Mercurial Superfly 8 Elite Spark Positve được Cristiano
+              Ronaldo mang đến VCK Euro 2020. Có thể đây là kì Euro cuối cùng
+              của Số 7 Huyền Thoại làng túc cầu hiện nay. Mặc dù dừng lại tại
+              vòng 1/16 đầy tiếc nuối. Nhưng thật may mắn, chúng ta vẫn thấy
+              được anh ấy cháy trên sân cỏ, tạo được những ấn tượng trước khi về
+              nước, và sẵn sàng phá tiếp những kỷ lục của làng túc cầu trên thế
+              giới hiện nay.
+            </p>
+            <p>
+              Với Upper được thiết kế theo Vaporsite mang tính chất cách mạng
+              kết hợp Duragon WT, Engineered Mesh, Titan Synthetic và Avail Q
+              Lining. Tạo ra sự ôm chân, tăng cảm giác bóng nhưng chân của ban
+              vẫn thoải mái không gây khó chịu.
+            </p>
+            <p>
+              Logo Swoosh đặc trưng, là biểu tượng của Nike, ngoài ra Flyknit
+              được trang bị trên toàn bộ Upper của đôi giày, giúp bạn mang 1 cảm
+              giác thoải mái, nhẹ nhàng, nhưng ôm sát chân. Gần như là '' làn da
+              thứ 2'' của bạn khi chơi bóng.Được thiết kế theo khuôn Aerotrak,
+              giúp bám sân tốt, tăng lực kéo khi tăng tốc.
+            </p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="profile"
+            role="tabpanel"
+            aria-labelledby="profile-tab"
+          >
+            <div class="table-responsive">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <h5>Thương hiệu</h5>
+                    </td>
+                    <td>
+                      <h5>Nike</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Hạn bảo hành</h5>
+                    </td>
+                    <td>
+                      <h5>6 tháng</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Giới tính</h5>
+                    </td>
+                    <td>
+                      <h5>Unisex</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Kho hàng</h5>
+                    </td>
+                    <td>
+                      <h5>2</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Gửi từ</h5>
+                    </td>
+                    <td>
+                      <h5>Quận 10, TP. Hồ Chí Minh</h5>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="contact"
+            role="tabpanel"
+            aria-labelledby="contact-tab"
+          >
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="comment_list">
+                  <div class="review_item">
+                    <div class="media">
+                      <div class="d-flex">
+                        <img
+                          src="https://firebasestorage.googleapis.com/v0/b/asm-es6-9c736.appspot.com/o/images%2Fproduct%2Freview-1.png?alt=media&token=8af12aff-4cb0-4581-8cbd-6dd460fff61f"
+                          alt=""
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h4>tutu090</h4>
+                        <h5>2022-02-09 09:07</h5>
+                        <a class="reply_btn" href="#">Phản hồi</a>
+                      </div>
+                    </div>
+                    <p>
+                      Mình chưa kịp quay video và chụp hình giày. Nói chung là
+                      ổn. Giày nhẹ và cũng đẹp. Mang êm. Nhưng vấn đề là giao
+                      hàng khá lâu, mất 15 ngày mới nhận hàng. Nên cần đặt trước
+                      lâu mới an râm.
+                    </p>
+                  </div>
+                  <div class="review_item reply">
+                    <div class="media">
+                      <div class="d-flex">
+                        <img
+                          src="https://firebasestorage.googleapis.com/v0/b/asm-es6-9c736.appspot.com/o/images%2Fproduct%2Freview-2.png?alt=media&token=844b4ad3-1a77-4100-9677-6fb2f74deb02"
+                          alt=""
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h4>minhhai872018</h4>
+                        <h5>2022-01-18 14:40</h5>
+                        <a class="reply_btn" href="#">Phàn hồi</a>
+                      </div>
+                    </div>
+                    <p>
+                      Đẹp,đi sai 40 không hiểu nó mới hay sao mà bị kíc lòng bên
+                      trong bàn chân bên trong,41 chắc dài hơn vừa...
+                    </p>
+                  </div>
+                  <div class="review_item">
+                    <div class="media">
+                      <div class="d-flex">
+                        <img
+                          src="https://firebasestorage.googleapis.com/v0/b/asm-es6-9c736.appspot.com/o/images%2Fproduct%2Freview-3.png?alt=media&token=23d1f803-11d4-45e5-ac1f-6f37462bad61"
+                          alt=""
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h4>q*****5</h4>
+                        <h5>2021-12-10 19:25</h5>
+                        <a class="reply_btn" href="#">Phản hồi</a>
+                      </div>
+                    </div>
+                    <p>
+                      Giá rẻ, ổn, sẽ ủng hộ shop lần sau! Giao hàng nhanh! Okela
+                      lắm!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="review_box">
+                  <h4>Viết bình luận</h4>
+                  <form
+                    class="row contact_form"
+                    action=""
+                    method="post"
+                    id="contactForm"
+                    novalidate="novalidate"
+                  >
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          placeholder="Họ tên"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          placeholder="Địa chỉ email"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="number"
+                          name="number"
+                          placeholder="Số điện thoại"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          id="message"
+                          rows="1"
+                          placeholder="Bình luận"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                      <button
+                        type="submit"
+                        value="submit"
+                        class="btn primary-btn"
+                      >
+                        Gửi
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade show active"
+            id="review"
+            role="tabpanel"
+            aria-labelledby="review-tab"
+          >
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="row total_rate">
+                  <div class="col-6">
+                    <div class="box_total">
+                      <h5>Đánh giá</h5>
+                      <h4>4.0</h4>
+                      <h6>(03 đánh giá)</h6>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="rating_list">
+                      <h3>Dựa trên 3 đánh giá</h3>
+                      <ul class="list">
+                        <li>
+                          <a href="#"
+                            >5 Sao <i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            >4 Sao <i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            >3 Sao <i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            >2 Sao <i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            >1 Sao <i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i
+                            ><i class="fa fa-star"></i> 01</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="review_list">
+                  <div class="review_item">
+                    <div class="media">
+                      <div class="d-flex">
+                        <img
+                          width="70px"
+                          style="border-radius: 50%"
+                          src="https://cf.shopee.vn/file/303222d6b087ee2ccfea48ea530a6189_tn"
+                          alt=""
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h4>vn9814_41344</h4>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <p>
+                      Hàng đi ổn, giao nhanh, gói cẩn thận chắc chắn, dịch mà
+                      giao nhanh là quá ổn
+                    </p>
+                  </div>
+                  <div class="review_item">
+                    <div class="media">
+                      <div class="d-flex">
+                        <img
+                          width="70px"
+                          style="border-radius: 50%"
+                          src="https://cf.shopee.vn/file/d52183a936c380be80426ee8c8ccbe41_tn"
+                          alt=""
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h4>smiling_252</h4>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <p>
+                      Hàng đẹp, giá đúng với sản phẩm. Shop đóng gói vận chuyển
+                      nhanh và cẩn thận
+                    </p>
+                  </div>
+                  <div class="review_item">
+                    <div class="media">
+                      <div class="d-flex">
+                        <img
+                          width="70px"
+                          style="border-radius: 50%"
+                          src="https://cf.shopee.vn/file/d861ce37fc82b9aa58df5692bbf7c7ff_tn"
+                          alt=""
+                        />
+                      </div>
+                      <div class="media-body">
+                        <h4>hin311</h4>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                    </div>
+                    <p>
+                      Giày ổn chất lượng, ủng hộ shop 2 lần r, giá phù hợp Hình
+                      ảnh mang tính chất nhận xu, hihi
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="review_box">
+                  <h4>Thêm đánh giá</h4>
+                  <p>Số sao:</p>
+                  <ul class="list">
+                    <li>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-star"></i></a>
+                    </li>
+                  </ul>
+                  <p>Rất tốt</p>
+
+                  <form
+                    class="row contact_form"
+                    action="contact_process.php"
+                    method="post"
+                    id="contactForm"
+                    novalidate="novalidate"
+                  >
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          name="name"
+                          placeholder="Họ tên"
+                          onfocus="this.placeholder = ''"
+                          onblur="this.placeholder = 'Họ tên'"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          name="email"
+                          placeholder="Địa chỉ email"
+                          onfocus="this.placeholder = ''"
+                          onblur="this.placeholder = 'Địa chỉ email'"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="number"
+                          name="number"
+                          placeholder="Số điện thoại"
+                          onfocus="this.placeholder = ''"
+                          onblur="this.placeholder = 'Số điện thoại'"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          name="message"
+                          id="message"
+                          rows="1"
+                          placeholder="Nhận xét"
+                          onfocus="this.placeholder = ''"
+                          onblur="this.placeholder = 'Nhận xét'"
+                        ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                      <button type="submit" value="submit" class="primary-btn">
+                        Gửi
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--================End Product Description Area =================-->
+
+    <script src="../assets/vendor/jquery-2.2.4.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../assets/js/site/jquery.ajaxchimp.min.js"></script>
+    <script src="../assets/js/site/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/site/jquery.sticky.js"></script>
+    <script src="../assets/js/site/nouislider.min.js"></script>
+    <script src="../assets/js/site/countdown.js"></script>
+
+    <script src="../assets/js/site/owl.carousel.min.js"></script>
+    <script src="../assets/js/site/jquery.magnific-popup.min.js"></script>
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="../assets/js/site/main.js"></script>
+    <script type="module" src="../../src/site/shop-details.js"></script>
+    <script type="module" src="../../src/site/header.js"></script>
+  </body>
+</html>
